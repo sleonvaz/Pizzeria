@@ -10,7 +10,7 @@
   },
   "alias": {
     "@Components": "./src/components/",
-    "@Public":"./public/",
+    "@Public": "./public/",
     "@Tools": "./src/tools/",
     "@Models": "./src/models/",
     "@Routes": "./src/routes/",
