@@ -1,0 +1,55 @@
+{
+  "name": "codespace-redux",
+  "version": "0.0.1",
+  "description": "Telepizza",
+  "main": "src/index.jsx",
+  "author": "Salvador Leon",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.11"
+  },
+  "alias": {
+    "@Components": "./src/components/",
+    "@Public":"./public/",
+    "@Tools": "./src/tools/",
+    "@Models": "./src/models/",
+    "@Routes": "./src/routes/",
+    "@Assets": "./src/assets/"
+  },
+  "scripts": {
+    "start": "rimraf build/ && npm run parcel-dev",
+    "clear": "rimraf .cache/ build/ yarn-error.log",
+    "clear:all": "rimraf .cache/ build/ node_modules/ yarn-error.log yarn.lock package-lock.json",
+    "format": "prettier --write './src/**/*.{js,jsx}'",
+    "parcel-dev": "parcel src/index.html -d build/ --open"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cloc": "^2.3.3",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "1.9.7",
+    "postcss-modules": "^1.3.2",
+    "prettier": "^1.14.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-logger": "^3.0.6",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-hot-loader": "^4.3.4",
+    "react-popper": "^1.3.3",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^7.1.0",
+    "redux": ">=4.0.0",
+    "src": "^1.1.2"
+  }
+}
